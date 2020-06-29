@@ -1,30 +1,29 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="nav">
+      <div class="nav-tittle">
+        <h1>六角西餐廳</h1>
+      </div>
+        <ul class="nav-list">
+          <li><a href="">特色</a></li>
+          <li><a href="">主廚</a></li>
+          <li><a href="">地圖</a></li>
+        </ul>
     </div>
-    <router-view/>
+    <div class="banner">
+      <div class="banner-content">
+        <h1>咬一口就無法忘懷的漢堡</h1>
+        <p>七夕絕對無法錯過的好滋味</p>
+        <p>六角大漢堡</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
 @import 'scss/all.scss';
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
+.nav {
   a {
-    font-weight: bold;
-    color: #2c3e50;
-
     &.router-link-exact-active {
       color: #42b983;
     }
