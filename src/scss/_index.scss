@@ -2,36 +2,164 @@ body{
   background-color: #EFE9E7;
   #app{
     width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
     .nav{
-      display: inline-flex;
-      flex-direction: row;
+      display: flex;
       position: fixed;
-      justify-content: space-between;
-      align-items: center;
       width: 100vw;
       height: 56px;
       background-color: rgba(0, 0, 0, 0.75);
-      color: white;
-      .nav-tittle{
-        font-size: 24px;
-      }
-      .nav-list{
+      flex-flow: nowrap row;
+      justify-content: center;
+      div{
         display: inline-flex;
+        width: 960px;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-        width: 157px;
-        font-size: 16px;
-        margin: 0 48px;
-        li{
+        color: white;
+        .nav-tittle{
+          font-size: 24px;
+        }
+        .nav-list{
           display: inline-flex;
+          justify-content: space-around;
+          width: 157px;
+          font-size: 16px;
+          li{
+            display: inline-flex;
+            a{
+
+            }
+          }
         }
       }
     }
     .banner{
+      display: flex;
       width: 100vw;
       height: 420px;
       background: no-repeat center;
       background-color: rgba(0, 0, 0, 1);
       background-image: url('/img/header_desktop.png');
+      align-items: center; //子項目的排列
+      justify-content: center; //子項目的排列
+      .banner-inside{
+        display: flex;
+        width: 960px;
+        height: 420px;
+        align-items: center; //子項目的排列
+        justify-content: center; //子項目的排列
+        .banner-content{
+          display: flex;
+          width: 460px;
+          height: 152px;
+          background-color: rgba(0,0,0,0.35);
+          color: #FFFFFF;
+          flex-flow: nowrap column;
+          align-items: center; //子項目的排列
+          justify-content: space-evenly; //子項目的排列
+          h1{
+            font-size: 36px;
+            margin: 12px 0;
+          }
+          div{
+            display: flex;
+            width: 192px;
+            height: 42px;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .secret{
+      display: flex;
+      width: 100vw;
+      height: 576px;
+      flex-flow: nowrap column;
+      align-items: center;
+      background-color: #EFE9E7;
+      color: #3D1101;
+      .secret-inside{
+        display: flex;
+        width: 960px;
+        height: 100%;
+        flex-flow: nowrap column;
+        align-items: center;
+        justify-content: space-evenly;
+        .secret-tittle{
+          font-size: 20px;
+          margin-top: 25px;
+          text-align: center;
+        }
+        .secret-content{
+          display: flex;
+          width: 100%;
+          height: 381px;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-bottom: 25px;
+          .secret-items{
+            display: flex;
+            width: 260px;
+            height: 100%;
+            flex-flow: nowrap column;
+            align-items: center;
+            img{
+              border-radius: 50%;
+              size: 100%;
+            }
+            .secret-kind{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .chef{
+      display: flex;
+      width: 100vw;
+      height: 460px;
+      flex-flow: nowrap row;
+      justify-content: center;
+      background-color: #3D1101;
+      .chef-inside{
+        display: flex;
+        width: 960px;
+        height: 100%;
+        flex-flow: nowrap row;
+        justify-content: space-evenly;
+        .chef-content{
+          display: flex;
+          width: 410px;
+          flex-flow: nowrap column;
+          color: #EFE9E7;
+          h1{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .feedback{
+      display: flex;
+      width: 100vw;
+      height: 365px;
+      background-color: #EFE9E7;
+      flex-flow: nowrap row;
+      justify-content: center;
+      .feedback-inside{
+        display: flex;
+        width: 960px;
+        height: 100%;
+        flex-flow: nowrap column;
+        justify-content: space-evenly;
+      }
     }
   }
 }

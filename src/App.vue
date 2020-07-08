@@ -1,20 +1,72 @@
 <template>
   <div id="app">
     <div class="nav">
-      <div class="nav-tittle">
-        <h1>六角西餐廳</h1>
+      <div class="nav-inside">
+        <div class="nav-tittle">
+          <h1>六角西餐廳</h1>
+        </div>
+          <ul class="nav-list">
+            <li><a href="">特色</a></li>
+            <li><a href="">主廚</a></li>
+            <li><a href="">地圖</a></li>
+          </ul>
       </div>
-        <ul class="nav-list">
-          <li><a href="">特色</a></li>
-          <li><a href="">主廚</a></li>
-          <li><a href="">地圖</a></li>
-        </ul>
     </div>
     <div class="banner">
-      <div class="banner-content">
-        <h1>咬一口就無法忘懷的漢堡</h1>
-        <p>七夕絕對無法錯過的好滋味</p>
-        <p>六角大漢堡</p>
+      <div class="banner-inside">
+        <div class="banner-content">
+          <h1>咬一口就無法忘懷的漢堡</h1><br>
+          <div>
+            <p>七夕絕對無法錯過的好滋味</p>
+            <p>六角大漢堡</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secret">
+      <div class="secret-inside">
+        <div class="secret-tittle">
+          <h1>客人總是在詢問<br>這麼好吃的秘訣是什麼</h1>
+        </div>
+        <div class="secret-content">
+          <div class="secret-items secret-1">
+            <img src="/img/feature_1.png">
+            <h1 class="secret-kind">台灣本土蔬菜</h1>
+            <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+          </div>
+          <div class="secret-items secret-2">
+            <img src="/img/feature_2.png">
+            <h1 class="secret-kind">專業米其林廚師</h1>
+            <p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+          </div>
+          <div class="secret-items secret-3">
+            <img src="/img/feature_3.png">
+            <h1 class="secret-kind">對於專業不能退讓</h1>
+            <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chef">
+      <div class="chef-inside">
+        <img src="/img/main_chef_brown.png" alt="chef">
+        <div class="chef-content">
+          <h1>今日主廚：帕金森、梅在帕</h1>
+          <h2>Tody Chef: Plum in Shock</h2>
+          <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feedback">
+      <div class="feedback-inside">
+        <div class="feedback-tittle">
+          <h1>聽聽別人的感想</h1>
+        </div>
+        <div class="feedback-content">
+          <div class="feedback-items"></div>
+          <div class="feedback-items"></div>
+          <div class="feedback-items"></div>
+        </div>
       </div>
     </div>
   </div>
