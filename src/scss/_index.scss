@@ -158,7 +158,36 @@ body{
         width: 960px;
         height: 100%;
         flex-flow: nowrap column;
+        align-items: center;
         justify-content: space-evenly;
+        .feedback-tittle{
+
+        }
+        .feedback-content{
+          display: flex;
+          width: 100%;
+          flex-flow: nowrap row;
+          justify-content: space-evenly;
+          .feedback-items{
+            display: flex;
+            width: 300px;
+            flex-flow: wrap row;
+            align-items: center;
+            justify-content: flex-start;
+            img{
+              border-radius: 50%;
+            }
+            h1{
+              
+            }
+            p{
+              width: 220px;
+            }
+            h2{
+              width: 220px;
+            }
+          }
+        }
       }
     }
   }

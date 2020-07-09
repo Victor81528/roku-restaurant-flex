@@ -63,9 +63,24 @@
           <h1>聽聽別人的感想</h1>
         </div>
         <div class="feedback-content">
-          <div class="feedback-items"></div>
-          <div class="feedback-items"></div>
-          <div class="feedback-items"></div>
+          <div class="feedback-items item-1">
+            <img src="/img/avatar_1.png" alt="產品經理">
+            <h1>高雄一口吃</h1>
+            <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+            <h2>產品經理</h2>
+          </div>
+          <div class="feedback-items item-2">
+            <img src="/img/avatar_2.png" alt="金身道士">
+            <h1>廟口小霸王</h1>
+            <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+            <h2>金身道士</h2>
+          </div>
+          <div class="feedback-items item-3">
+            <img src="/img/avatar_3.png" alt="美麗萬分">
+            <h1>春天也來了</h1>
+            <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+            <h2>美麗萬分</h2>
+          </div>
         </div>
       </div>
     </div>
