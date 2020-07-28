@@ -3,7 +3,7 @@ body{
   #app{
     width: 100vw;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: nowrap column;
     .nav{
       display: flex;
       position: fixed;
@@ -12,15 +12,16 @@ body{
       background-color: rgba(0, 0, 0, 0.75);
       flex-flow: nowrap row;
       justify-content: center;
-      div{
+      .nav-inside{
         display: inline-flex;
         width: 960px;
-        flex-direction: row;
+        flex-flow: nowrap row;
         align-items: center;
         justify-content: space-between;
         color: white;
         .nav-tittle{
           font-size: 24px;
+          color: #FFFFFF;
         }
         .nav-list{
           display: inline-flex;
@@ -43,14 +44,14 @@ body{
       background: no-repeat center;
       background-color: rgba(0, 0, 0, 1);
       background-image: url('/img/header_desktop.png');
-      align-items: center; //子項目的排列
-      justify-content: center; //子項目的排列
+      align-items: center;
+      justify-content: center;
       .banner-inside{
         display: flex;
         width: 960px;
         height: 420px;
-        align-items: center; //子項目的排列
-        justify-content: center; //子項目的排列
+        align-items: center;
+        justify-content: center;
         .banner-content{
           display: flex;
           width: 460px;
@@ -58,11 +59,10 @@ body{
           background-color: rgba(0,0,0,0.35);
           color: #FFFFFF;
           flex-flow: nowrap column;
-          align-items: center; //子項目的排列
-          justify-content: space-evenly; //子項目的排列
+          align-items: center;
           h1{
             font-size: 36px;
-            margin: 12px 0;
+            margin: 20px 42px 16px 22px;
           }
           div{
             display: flex;
@@ -111,12 +111,18 @@ body{
             height: 100%;
             flex-flow: nowrap column;
             align-items: center;
+            justify-content: flex-start;
             img{
               border-radius: 50%;
               size: 100%;
+              margin-bottom: 20px;
             }
             .secret-kind{
               font-size: 18px;
+              margin-bottom: 11px;
+            }
+            p{
+
             }
           }
         }
@@ -134,7 +140,7 @@ body{
         width: 960px;
         height: 100%;
         flex-flow: nowrap row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         .chef-content{
           display: flex;
           width: 410px;
@@ -160,33 +166,147 @@ body{
         flex-flow: nowrap column;
         align-items: center;
         justify-content: space-evenly;
+        color: #3D1101;
         .feedback-tittle{
-
+          font-size: 24px;
         }
         .feedback-content{
           display: flex;
           width: 100%;
           flex-flow: nowrap row;
-          justify-content: space-evenly;
+          justify-content: space-between;
           .feedback-items{
             display: flex;
             width: 300px;
-            flex-flow: wrap row;
-            align-items: center;
-            justify-content: flex-start;
+            height: 201px;
+            flex-flow: nowrap row;
+            align-items: flex-start;
+            // justify-content: space-around;
             img{
               border-radius: 50%;
             }
-            h1{
-              
-            }
-            p{
-              width: 220px;
-            }
-            h2{
-              width: 220px;
+            .word-part{
+              display: flex;
+              height: 100%;
+              flex-flow: nowrap column;
+              justify-content: space-around;
+              align-items: center;
+              h1{
+                width: 220px;
+                height: 67px;
+              }
+              p{
+                width: 220px;
+                height: 96px;
+                line-height: 24px;
+              }
+              h2{
+                width: 220px;
+                line-height: 24px;
+                text-align: end;
+                opacity: 75%;
+              }
             }
           }
+        }
+      }
+    }
+    .booking{
+      display: flex;
+      width: 100vw;
+      height: 588px;
+      background-color: #FAFAFA;
+      justify-content: center;
+      .booking-inside{
+        display: flex;
+        width: 960px;
+        height: 100%;
+        flex-flow: nowrap column;
+        justify-content: space-evenly;
+        .booking-tittle{
+          h1{
+            color: #3D1101;
+            font-size: 24px;
+            text-align: center;
+          }
+        }
+        .booking-content{
+          display: flex;
+          width: 100%;
+          flex-flow: nowrap row;
+          justify-content: space-evenly;
+          img{}
+          .booking-info{
+            display: flex;
+            flex-flow: nowrap column;
+            justify-content: space-evenly;
+            label{}
+            input{
+              width: 460px;
+            }
+            .vegetarian{
+              display: flex;
+              flex-flow: nowrap row;
+              div{
+                display: flex;
+                flex-flow: nowrap row;
+                input{
+                  width: auto;
+                }
+              }
+            }
+            .button{
+              display: flex;
+              flex-flow: nowrap row;
+              width: 100%;
+              justify-content: flex-end;
+              #cancel{
+                width: 70px;
+                height: 32px;
+                background: rgba(0,0,0,0.35);
+                border-radius: 3px;
+                opacity: 100%;
+                color: white;
+              }
+              #send{
+                width: 70px;
+                height: 32px;
+                background: #F56C23;
+                border-radius: 3px;
+                opacity: 100%;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer{
+      display: flex;
+      width: 100vw;
+      height: 232px;
+      flex-flow: nowrap row;
+      background-color: #EFE9E7;
+      justify-content: center;
+      .footer-inside{
+        display: flex;
+        width: 960px;
+        height: 100%;
+        .footer-about{
+          display: flex;
+          width: 299px;
+          height: 100%;
+          flex-flow: nowrap column;
+        }
+        .footer-contact{
+          display: flex;
+          width: 299px;
+          height: 100%;
+          flex-flow: nowrap column;
+
+        }
+        .footer-logo{
+
         }
       }
     }
