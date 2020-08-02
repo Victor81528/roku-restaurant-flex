@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <div class="nav">
+    <div id="nav">
       <div class="nav-inside">
         <div class="nav-tittle">
           <h1>六角西餐廳</h1>
         </div>
           <ul class="nav-list">
-            <li><a href="">特色</a></li>
-            <li><a href="">主廚</a></li>
-            <li><a href="">地圖</a></li>
+            <li><a href="#secret">特色</a></li>
+            <li><a href="#chef">主廚</a></li>
+            <li><a href="#booking">地圖</a></li>
           </ul>
       </div>
     </div>
-    <div class="banner">
+    <div id="banner">
       <div class="banner-inside">
         <div class="banner-content">
           <h1>咬一口就無法忘懷的漢堡</h1><br>
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="secret">
+    <div id="secret">
       <div class="secret-inside">
         <div class="secret-tittle">
           <div class="line"></div>
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="chef">
+    <div id="chef">
       <div class="chef-inside">
         <img src="/img/main_chef_brown.png" alt="chef">
         <div class="chef-content">
@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="feedback">
+    <div id="feedback">
       <div class="feedback-inside">
         <div class="feedback-tittle">
           <h1>聽聽別人的感想</h1>
@@ -92,7 +92,7 @@
         </div>
       </div>
     </div>
-    <div class="booking">
+    <div id="booking">
       <div class="booking-inside">
         <div class="booking-tittle">
           <h1>我們的位置不太夠坐<br>要不要先定位呢？</h1>
@@ -125,7 +125,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div id="footer">
       <div class="footer-inside">
         <div class="footer-left">
           <div class="footer-about">

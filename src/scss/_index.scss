@@ -4,7 +4,7 @@ body{
     width: 100vw;
     display: flex;
     flex-flow: nowrap column;
-    .nav{
+    #nav{
       display: flex;
       position: fixed;
       width: 100vw;
@@ -33,6 +33,7 @@ body{
             a{
               color: #FFFFFF;
               padding: 10px 10px;
+              text-align: center;
               text-decoration: none;
               border-bottom: #3d1101;
               &:hover{
@@ -45,7 +46,7 @@ body{
         }
       }
     }
-    .banner{
+    #banner{
       display: flex;
       width: 100vw;
       height: 420px;
@@ -86,7 +87,7 @@ body{
         }
       }
     }
-    .secret{
+    #secret{
       display: flex;
       width: 100vw;
       height: 576px;
@@ -146,7 +147,7 @@ body{
         }
       }
     }
-    .chef{
+    #chef{
       display: flex;
       width: 100vw;
       height: 460px;
@@ -179,7 +180,7 @@ body{
         }
       }
     }
-    .feedback{
+    #feedback{
       display: flex;
       width: 100vw;
       height: 365px;
@@ -240,7 +241,7 @@ body{
         }
       }
     }
-    .booking{
+    #booking{
       display: flex;
       width: 100vw;
       height: 588px;
@@ -330,7 +331,7 @@ body{
         }
       }
     }
-    .footer{
+    #footer{
       display: flex;
       width: 100vw;
       height: 232px;
