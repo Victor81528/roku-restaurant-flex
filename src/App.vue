@@ -26,7 +26,9 @@
     <div class="secret">
       <div class="secret-inside">
         <div class="secret-tittle">
+          <div class="line"></div>
           <h1>客人總是在詢問<br>這麼好吃的秘訣是什麼</h1>
+          <div class="line"></div>
         </div>
         <div class="secret-content">
           <div class="secret-items secret-1">
@@ -105,7 +107,7 @@
             <label for="email">信箱</label>
             <input type="email" name="email" placeholder="test@gmail.com">
             <label for="email">人數</label>
-            <input type="number" name="number" placeholder="">
+            <input type="number" name="people" placeholder="">
             <label for="vegetarian">是否需要素食</label>
             <div class="vegetarian">
               <div class="yes">
@@ -125,18 +127,30 @@
     </div>
     <div class="footer">
       <div class="footer-inside">
-        <div class="footer-about">
-          <h1>關於 六角西餐廳</h1>
-          <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+        <div class="footer-left">
+          <div class="footer-about">
+            <h1>關於 六角西餐廳</h1>
+            <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+          </div>
+          <div class="footer-contact">
+            <h1>聯絡方式</h1>
+            <ul>
+              <li>高雄市中正五路到底</li>
+              <li>+886 886 886</li>
+              <li>service@hexschool.com</li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-contact">
-          <h1>聯絡方式</h1>
-          <p>高雄市中正五路到底</p>
-          <p>+886 886 886</p>
-          <p>service@hexschool.com</p>
-        </div>
-        <div class="footer-logo">
-          <h1>六角西餐廳</h1>
+        <div class="footer-right">
+          <div class="footer-logo">
+            <h1>六角西餐廳</h1>
+            <div class="social">
+              <i class="fab fa-google-plus-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-facebook-square"></i>
+              <div class="aaa"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

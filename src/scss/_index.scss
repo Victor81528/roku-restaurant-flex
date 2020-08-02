@@ -24,14 +24,22 @@ body{
           color: #FFFFFF;
         }
         .nav-list{
-          display: inline-flex;
+          display: flex;
           justify-content: space-around;
-          width: 157px;
+          width: 250px;
           font-size: 16px;
           li{
-            display: inline-flex;
+            display: flex;
             a{
-
+              color: #FFFFFF;
+              padding: 10px 10px;
+              text-decoration: none;
+              border-bottom: #3d1101;
+              &:hover{
+                transition: 0.3s;
+                border-bottom: 3px solid #3d1101;
+                box-sizing: border-box;
+              }
             }
           }
         }
@@ -94,9 +102,19 @@ body{
         align-items: center;
         justify-content: space-evenly;
         .secret-tittle{
+          display: flex;
+          flex-flow: nowrap row;
+          width: 461px;
           font-size: 20px;
           margin-top: 25px;
           text-align: center;
+          align-items: center;
+          justify-content: space-between;
+          .line{
+            width: 122px;
+            height: 1px;
+            background-color: #979797;
+          }
         }
         .secret-content{
           display: flex;
@@ -145,9 +163,18 @@ body{
           display: flex;
           width: 410px;
           flex-flow: nowrap column;
+          justify-content: center;
           color: #EFE9E7;
           h1{
             font-size: 20px;
+            line-height: 32px;
+          }
+          h2{
+            font-size: 16px;
+            margin-bottom: 16px;
+          }
+          p{
+            font-size: 16px;
           }
         }
       }
@@ -191,9 +218,11 @@ body{
               flex-flow: nowrap column;
               justify-content: space-around;
               align-items: center;
+              margin-left: 13px;
               h1{
                 width: 220px;
                 height: 67px;
+                line-height: 67px;
               }
               p{
                 width: 220px;
@@ -234,24 +263,40 @@ body{
           display: flex;
           width: 100%;
           flex-flow: nowrap row;
-          justify-content: space-evenly;
-          img{}
+          justify-content: space-between;
+          img{
+            margin-right: 20px;
+          }
           .booking-info{
             display: flex;
             flex-flow: nowrap column;
             justify-content: space-evenly;
-            label{}
+            label{
+              margin-bottom: 11px;
+            }
             input{
               width: 460px;
+              height: 32px;
+              margin-bottom: 12px;
+              background: #FFFFFF;
+              border: 1px solid #CCCCCC;
+              box-shadow: inset 0px 1px 0px 0px #ECECEC;
+              border-radius: 3px;
+              padding: 5px 12px;
             }
             .vegetarian{
               display: flex;
               flex-flow: nowrap row;
+              line-height: 32px;
+              text-align: center;
               div{
                 display: flex;
                 flex-flow: nowrap row;
+                margin-right: 36px;
                 input{
                   width: auto;
+                  margin-right: 6px;
+                  box-shadow: none;
                 }
               }
             }
@@ -260,10 +305,12 @@ body{
               flex-flow: nowrap row;
               width: 100%;
               justify-content: flex-end;
+              font-size: 14px;
               #cancel{
                 width: 70px;
                 height: 32px;
                 background: rgba(0,0,0,0.35);
+                border: 0;
                 border-radius: 3px;
                 opacity: 100%;
                 color: white;
@@ -272,9 +319,11 @@ body{
                 width: 70px;
                 height: 32px;
                 background: #F56C23;
+                border: 0;
                 border-radius: 3px;
                 opacity: 100%;
                 color: white;
+                margin-left: 11px;;
               }
             }
           }
@@ -290,24 +339,82 @@ body{
       justify-content: center;
       .footer-inside{
         display: flex;
+        flex-flow: nowrap row;
         width: 960px;
         height: 100%;
-        .footer-about{
-          display: flex;
-          width: 299px;
-          height: 100%;
-          flex-flow: nowrap column;
-        }
-        .footer-contact{
-          display: flex;
-          width: 299px;
-          height: 100%;
-          flex-flow: nowrap column;
-
-        }
-        .footer-logo{
-
-        }
+        justify-content: space-between;
+        color: #3D1101;
+       .footer-left{
+         display: flex;
+         flex-flow: nowrap row;
+         .footer-about{
+           display: flex;
+           flex-flow: nowrap column;
+           width: 299px;
+           height: 100%;
+           margin-right: 21px;
+           h1{
+             margin-top: 50px;
+             font-size: 24px;
+           }
+           p{
+             margin-top: 16px;
+             font-size: 16px;
+           }
+         }
+         .footer-contact{
+           display: flex;
+           flex-flow: nowrap column;
+           width: 299px;
+           height: 100%;
+           h1{
+             margin-top: 50px;
+             font-size: 24px;
+           }
+           ul{
+             margin-top: 16px;
+             font-size: 16px;
+             list-style: disc inside none;
+           }
+         }
+       }
+       .footer-right{
+         .footer-logo{
+           display: flex;
+           flex-flow: nowrap column;
+           width: 299px;
+           height: 100%;
+           align-items: flex-end;
+           h1{
+             font-size: 49px;
+             letter-spacing: 0px;
+             margin-top: 54px;
+           }
+           .social{
+             display: flex;
+             width: 117px;
+             flex-flow: nowrap row;
+             margin-top: 22px;
+             font-size: 36px;
+             justify-content: space-between;
+             .fa-google-plus-square{
+               color: #DB4437;
+             }
+             .fa-twitter-square{
+              color: #41ABE1;
+             }
+             .fa-facebook-square{
+              color: #3A5795;
+             }
+             .aaa{
+               width: 122px;
+               height: 1px;
+               border: 1px solid black;
+               box-sizing: border-box;
+             }
+           }
+         }
+       }
       }
     }
   }
