@@ -14,7 +14,7 @@ body{
       justify-content: center;
       .nav-inside{
         display: inline-flex;
-        width: 960px;
+        width: 100%;
         flex-flow: nowrap row;
         align-items: center;
         justify-content: space-between;
@@ -22,12 +22,21 @@ body{
         .nav-tittle{
           font-size: 24px;
           color: #FFFFFF;
+          margin-left: 42px;
+          @media screen and (max-width: 768px) {
+            margin-left: 13px;
+          }
         }
         .nav-list{
           display: flex;
-          justify-content: space-around;
           width: 250px;
+          justify-content: space-between;
           font-size: 16px;
+          margin-right: 42px;
+          @media screen and (max-width: 768px) {
+            width: 157px;
+            margin-right: 13px;
+          }
           li{
             display: flex;
             a{
@@ -97,20 +106,23 @@ body{
       color: #3D1101;
       .secret-inside{
         display: flex;
-        width: 960px;
-        height: 100%;
+        // width: 1024px;
+        height: 476px;
         flex-flow: nowrap column;
         align-items: center;
-        justify-content: space-evenly;
+        margin: auto 62px;
         .secret-tittle{
           display: flex;
           flex-flow: nowrap row;
           width: 461px;
           font-size: 20px;
-          margin-top: 25px;
           text-align: center;
           align-items: center;
           justify-content: space-between;
+          margin-bottom: 31px;
+          h1{
+            line-height: 32px;
+          }
           .line{
             width: 122px;
             height: 1px;
@@ -119,19 +131,37 @@ body{
         }
         .secret-content{
           display: flex;
-          width: 100%;
-          height: 381px;
-          justify-content: space-evenly;
-          align-items: center;
-          margin-bottom: 25px;
+          // width: 900px;
+          height: 100%;
+          flex-flow: nowrap row;
+          justify-content: space-between;
+          align-items: flex-start;
           .secret-items{
             display: flex;
             width: 260px;
             height: 100%;
+            margin: 0 30px;
             flex-flow: nowrap column;
-            align-items: center;
             justify-content: flex-start;
+            align-items: center;
+            flex-shrink: 1;
+            @media screen and (max-width: 768px){
+              width: 200px;
+            }
+            &:nth-child(1){
+              // margin-left: 62px;
+              @media screen and (max-width: 768px){
+                margin-left: 27px;
+              }
+            }
+            &:nth-child(3){
+              // margin-right: 62px;
+              @media screen and (max-width: 768px){
+                margin-right: 27px;
+              }
+            }
             img{
+              width: 200px;
               border-radius: 50%;
               size: 100%;
               margin-bottom: 20px;
@@ -139,9 +169,6 @@ body{
             .secret-kind{
               font-size: 18px;
               margin-bottom: 11px;
-            }
-            p{
-
             }
           }
         }
@@ -242,7 +269,8 @@ body{
       }
     }
     #booking{
-      display: flex;
+      display: none;
+      // display: flex;
       width: 100vw;
       height: 588px;
       background-color: #FAFAFA;
@@ -270,13 +298,15 @@ body{
           }
           .booking-info{
             display: flex;
+            flex-basis: 460px;
+            flex-shrink: 1;
             flex-flow: nowrap column;
             justify-content: space-evenly;
             label{
               margin-bottom: 11px;
             }
             input{
-              width: 460px;
+              width: 100%;
               height: 32px;
               margin-bottom: 12px;
               background: #FFFFFF;
