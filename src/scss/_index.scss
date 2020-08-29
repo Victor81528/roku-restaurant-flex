@@ -26,7 +26,7 @@ body{
         align-items: center;
         justify-content: space-between;
         color: white;
-        .nav-tittle{
+        .nav-title{
           font-size: 24px;
           color: #FFFFFF;
           margin-left: 42px;
@@ -118,7 +118,7 @@ body{
         flex-flow: nowrap column;
         align-items: center;
         margin: auto 62px;
-        .secret-tittle{
+        .secret-title{
           display: flex;
           flex-flow: nowrap row;
           font-size: 20px;
@@ -142,9 +142,6 @@ body{
           flex-flow: nowrap row;
           justify-content: center;
           align-items: flex-start;
-          @media screen and (max-width: 768px){
-            margin: 0 27px;
-          }
           @media screen and (max-width: 576px){
             flex-flow: nowrap column;
           }
@@ -157,6 +154,16 @@ body{
             flex-flow: nowrap column;
             justify-content: flex-start;
             align-items: center;
+            &:first-child{
+              @media screen and (max-width: 768px){
+                margin-left: 27px;
+              }
+            }
+            &:last-child{
+              @media screen and (max-width: 768px){
+                margin-right: 25px;
+              }
+            }
             @media screen and (max-width: 768px){
               margin: 0;
             }
@@ -173,16 +180,6 @@ body{
             .secret-kind{
               font-size: 18px;
               margin-bottom: 11px;
-            }
-          }
-          :first-child{
-            @media screen and (max-width: 768px){
-              margin-left: 25px;
-            }
-          }
-          :last-child{
-            @media screen and (max-width: 768px){
-              margin-right: 25px;
             }
           }
         }
@@ -250,14 +247,14 @@ body{
         align-items: center;
         justify-content: center;
         color: #3D1101;
-        .feedback-tittle{
+        .feedback-title{
           font-size: 24px;
           margin-bottom: 32px;
         }
         .feedback-content{
           display: flex;
           width: 100%;
-          margin: 0 42px;
+          margin: 0 30px;
           flex-flow: nowrap row;
           justify-content: center;
           .feedback-items{
@@ -269,28 +266,34 @@ body{
             flex-flow: nowrap row;
             align-items: flex-start;
             img{
+              width: 67px;
               border-radius: 50%;
             }
             .word-part{
               display: flex;
               height: 100%;
+              max-width: 220px;
               flex-flow: nowrap column;
               justify-content: space-around;
               align-items: center;
               margin-left: 13px;
               h1{
-                width: 220px;
-                height: 67px;
-                line-height: 67px;
+                max-width: 220px;
+                align-self: flex-start;
+                margin: 21.5px 0;
+                font-size: 18px;
+                // line-height: 67px;
               }
               p{
-                width: 220px;
-                height: 96px;
+                max-width: 220px;
+                font-size: 16px;
                 line-height: 24px;
               }
               h2{
-                width: 220px;
+                max-width: 220px;
+                align-self: flex-end;
                 line-height: 24px;
+                font-size: 16px;
                 text-align: end;
                 opacity: 75%;
               }
@@ -312,7 +315,7 @@ body{
         height: 100%;
         flex-flow: nowrap column;
         justify-content: space-evenly;
-        .booking-tittle{
+        .booking-title{
           h1{
             color: #3D1101;
             font-size: 24px;

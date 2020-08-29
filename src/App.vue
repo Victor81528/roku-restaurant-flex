@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <div class="nav-inside">
-        <div class="nav-tittle">
+        <div class="nav-title">
           <h1>六角西餐廳</h1>
         </div>
           <ul class="nav-list">
@@ -25,7 +25,7 @@
     </div>
     <div id="secret">
       <div class="secret-inside">
-        <div class="secret-tittle">
+        <div class="secret-title">
           <div class="line"></div>
           <h1>客人總是在詢問<br>這麼好吃的秘訣是什麼</h1>
           <div class="line"></div>
@@ -61,7 +61,7 @@
     </div>
     <div id="feedback">
       <div class="feedback-inside">
-        <div class="feedback-tittle">
+        <div class="feedback-title">
           <h1>聽聽別人的感想</h1>
         </div>
         <div class="feedback-content">
@@ -94,7 +94,7 @@
     </div>
     <div id="booking">
       <div class="booking-inside">
-        <div class="booking-tittle">
+        <div class="booking-title">
           <h1>我們的位置不太夠坐<br>要不要先定位呢？</h1>
         </div>
         <div class="booking-content">
