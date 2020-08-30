@@ -154,14 +154,12 @@
           </div>
         </div>
         <div class="footer-right">
-          <div class="footer-logo">
-            <h1>六角西餐廳</h1>
-            <div class="social">
-              <i class="fab fa-google-plus-square"></i>
-              <i class="fab fa-twitter-square"></i>
-              <i class="fab fa-facebook-square"></i>
-              <div class="aaa"></div>
-            </div>
+          <h1>六角西餐廳</h1>
+          <div class="social">
+            <i class="fab fa-google-plus-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <div class="aaa"></div>
           </div>
         </div>
       </div>
