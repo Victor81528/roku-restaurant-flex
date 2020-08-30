@@ -100,24 +100,36 @@
         <div class="booking-content">
           <img src="/img/Map.png" alt="map">
           <form class="booking-info">
-            <label for="name">姓名</label>
-            <input type="text" name="name" placeholder="六角講師吃尾牙">
-            <label for="tele">電話</label>
-            <input type="text" name="tele" placeholder="02-12345678">
-            <label for="email">信箱</label>
-            <input type="email" name="email" placeholder="test@gmail.com">
-            <label for="email">人數</label>
-            <input type="number" name="people" placeholder="">
-            <label for="vegetarian">是否需要素食</label>
-            <div class="vegetarian">
-              <div class="yes">
-                <input type="radio" name="vegetarian" value="是"><p>是</p>
+            <div class="booking-list">
+              <div class="items item-1">
+                <label for="name">姓名</label>
+                <input type="text" name="name" placeholder="六角講師吃尾牙">
               </div>
-              <div class="no">
-                <input type="radio" name="vegetarian" value="否"><p>否</p>
+              <div class="items item-2">
+                <label for="tele">電話</label>
+                <input type="text" name="tele" placeholder="02-12345678">
+              </div>
+              <div class="items item-3">
+                <label for="email">信箱</label>
+                <input type="email" name="email" placeholder="test@gmail.com">
+              </div>
+              <div class="items item-4">
+                <label for="email">人數</label>
+                <input type="number" name="people" placeholder="">
+              </div>
+              <div class="items item-5">
+                <label for="vegetarian">是否需要素食</label>
+                <div class="vegetarian">
+                  <div class="yes">
+                    <input type="radio" name="vegetarian" value="是"><p>是</p>
+                  </div>
+                  <div class="no">
+                    <input type="radio" name="vegetarian" value="否"><p>否</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="button">
+            <div class="buttons">
               <button id="cancel">取消</button>
               <input id="send" type="submit" value="送出">
             </div>
