@@ -23,7 +23,7 @@ body #app #nav {
   justify-content: center;
 }
 body #app #nav .nav-inside {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   flex-flow: nowrap row;
   align-items: center;
@@ -31,13 +31,20 @@ body #app #nav .nav-inside {
   color: white;
 }
 body #app #nav .nav-inside .nav-title {
-  font-size: 24px;
   color: #FFFFFF;
-  margin-left: 42px;
+  margin: 0 42px;
 }
 @media screen and (max-width: 768px) {
   body #app #nav .nav-inside .nav-title {
     margin-left: 13px;
+  }
+}
+body #app #nav .nav-inside .nav-title h1 {
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  body #app #nav .nav-inside .nav-title h1 {
+    font-size: 18.3px;
   }
 }
 body #app #nav .nav-inside .nav-list {
@@ -45,7 +52,7 @@ body #app #nav .nav-inside .nav-list {
   width: 250px;
   justify-content: space-between;
   font-size: 16px;
-  margin-right: 42px;
+  margin: 0 42px;
 }
 @media screen and (max-width: 768px) {
   body #app #nav .nav-inside .nav-list {
@@ -68,6 +75,21 @@ body #app #nav .nav-inside .nav-list li a:hover {
   border-bottom: 3px solid #3d1101;
   box-sizing: border-box;
 }
+@media screen and (max-width: 576px) {
+  body #app #nav .nav-inside .nav-list li a {
+    display: none;
+  }
+}
+body #app #nav .nav-inside .nav-list li i {
+  display: none;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 576px) {
+  body #app #nav .nav-inside .nav-list li i {
+    display: block;
+  }
+}
 body #app #banner {
   display: flex;
   width: 100vw;
@@ -77,6 +99,11 @@ body #app #banner {
   background-image: url("/img/header_desktop.png");
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  body #app #banner {
+    background-image: url("/img/Bitmap.png");
+  }
 }
 body #app #banner .banner-inside {
   display: flex;

@@ -6,9 +6,10 @@
           <h1>六角西餐廳</h1>
         </div>
           <ul class="nav-list">
-            <li><a href="#secret">特色</a></li>
-            <li><a href="#chef">主廚</a></li>
-            <li><a href="#booking">地圖</a></li>
+            <li class="a"><a href="#secret">特色</a></li>
+            <li class="a"><a href="#chef">主廚</a></li>
+            <li class="a"><a href="#booking">地圖</a></li>
+            <li class="burger"><i class="fas fa-bars"></i></li>
           </ul>
       </div>
     </div>
