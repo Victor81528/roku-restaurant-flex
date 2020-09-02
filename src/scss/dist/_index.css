@@ -42,43 +42,39 @@ body #app #nav .nav-inside .nav-title {
 body #app #nav .nav-inside .nav-title h1 {
   font-size: 24px;
 }
-@media screen and (max-width: 768px) {
-  body #app #nav .nav-inside .nav-title h1 {
-    font-size: 18.3px;
-  }
-}
 body #app #nav .nav-inside .nav-list {
   display: flex;
-  width: 250px;
-  justify-content: space-between;
+  max-width: 250px;
+  justify-content: flex-end;
   font-size: 16px;
   margin: 0 42px;
 }
 @media screen and (max-width: 768px) {
   body #app #nav .nav-inside .nav-list {
-    width: 157px;
     margin-right: 13px;
   }
 }
-body #app #nav .nav-inside .nav-list li {
-  display: flex;
+@media screen and (max-width: 576px) {
+  body #app #nav .nav-inside .nav-list {
+    margin-right: 22px;
+  }
 }
 body #app #nav .nav-inside .nav-list li a {
   color: #FFFFFF;
-  padding: 10px 10px;
+  margin: 0 15px;
   text-align: center;
   text-decoration: none;
   border-bottom: #3d1101;
-}
-body #app #nav .nav-inside .nav-list li a:hover {
-  transition: 0.3s;
-  border-bottom: 3px solid #3d1101;
-  box-sizing: border-box;
 }
 @media screen and (max-width: 576px) {
   body #app #nav .nav-inside .nav-list li a {
     display: none;
   }
+}
+body #app #nav .nav-inside .nav-list li a:hover {
+  transition: 0.3s;
+  border-bottom: 3px solid #3d1101;
+  box-sizing: border-box;
 }
 body #app #nav .nav-inside .nav-list li i {
   display: none;
@@ -107,6 +103,7 @@ body #app #banner {
 }
 body #app #banner .banner-inside {
   display: flex;
+  width: 100%;
   height: 420px;
   align-items: center;
   justify-content: center;
@@ -119,20 +116,45 @@ body #app #banner .banner-inside .banner-content {
   color: #FFFFFF;
   flex-flow: nowrap column;
   align-items: center;
+  justify-content: flex-start;
 }
-body #app #banner .banner-inside .banner-content h1 {
-  font-size: 36px;
+@media screen and (max-width: 576px) {
+  body #app #banner .banner-inside .banner-content {
+    height: 194px;
+  }
+}
+body #app #banner .banner-inside .banner-content .banner-title1 {
   margin: 20px 42px 16px 22px;
 }
-body #app #banner .banner-inside .banner-content div {
+@media screen and (max-width: 576px) {
+  body #app #banner .banner-inside .banner-content .banner-title1 {
+    margin: 20px 6px 16px 20px;
+  }
+}
+body #app #banner .banner-inside .banner-content .banner-title1 h1 {
+  font-size: 36px;
+}
+@media screen and (max-width: 576px) {
+  body #app #banner .banner-inside .banner-content .banner-title1 h1 {
+    text-align: center;
+  }
+}
+body #app #banner .banner-inside .banner-content .banner-title1 h1 .linebreak {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  body #app #banner .banner-inside .banner-content .banner-title1 h1 .linebreak {
+    display: flex;
+  }
+}
+body #app #banner .banner-inside .banner-content .banner-title2 {
   display: flex;
-  width: 192px;
   height: 42px;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
 }
-body #app #banner .banner-inside .banner-content div p {
+body #app #banner .banner-inside .banner-content .banner-title2 p {
   font-size: 16px;
 }
 body #app #secret {
@@ -586,6 +608,7 @@ body #app #booking .booking-inside .booking-content .booking-info .buttons #send
 }
 body #app #footer {
   display: flex;
+  display: none;
   width: 100vw;
   height: 232px;
   flex-flow: nowrap row;
