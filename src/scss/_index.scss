@@ -40,7 +40,7 @@ body{
     font-family: MicrosoftJhengHeiRegular;
     #nav{
       display: flex;
-      // display: none;
+      display: none;
       position: fixed;
       width: 100vw;
       height: 56px;
@@ -108,7 +108,7 @@ body{
     }
     #banner{
       display: flex;
-      // display: none;
+      display: none;
       width: 100vw;
       height: 420px;
       background: no-repeat center;
@@ -192,7 +192,7 @@ body{
     }
     #secret{
 			display: flex;
-			// display: none;
+			display: none;
       width: 100vw;
       height: 576px;
       flex-flow: nowrap column;
@@ -308,7 +308,6 @@ body{
       flex-flow: nowrap row;
       justify-content: center;
       background-color: #3D1101;
-      overflow-y: scroll;
       @media screen and (max-width: 576px){
         height: auto;
       }
