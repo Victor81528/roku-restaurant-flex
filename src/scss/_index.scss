@@ -205,8 +205,14 @@ body{
       .secret-inside{
         display: flex;
         width: 100%;
+        height: 100%;
         flex-flow: nowrap column;
         align-items: center;
+        box-sizing: border-box;
+        padding: {
+          top: 50px;
+          bottom: 50px;
+        }
         .secret-title{
           display: flex;
           flex-flow: nowrap row;
@@ -214,7 +220,6 @@ body{
           align-items: center;
           justify-content: space-between;
           margin: {
-            top: 50px;
             bottom: 31px;
           }
           h1{
@@ -237,6 +242,11 @@ body{
           flex-flow: nowrap row;
           justify-content: center;
           align-items: flex-start;
+          box-sizing: border-box;
+          padding: {
+            left: 30px;
+            right: 30px;
+          }
           @media screen and (max-width: 576px){
             flex-flow: nowrap column;
             align-items: center;
@@ -246,38 +256,44 @@ body{
             width: 33.333%;
             max-width: 260px;
             height: 100%;
-            margin: 0 30px;
             flex-flow: nowrap column;
             justify-content: flex-start;
             align-items: center;
+            margin-right: 60px;
             &:first-child{
-              @media screen and (max-width: 768px){
-                margin-left: 27px;
+              @media screen and (max-width: 576px){
+                margin-bottom: 30px;
+              }
+            }
+            &:nth-child(2){
+              @media screen and (max-width: 576px){
+                margin-bottom: 40px;
               }
             }
             &:last-child{
-              @media screen and (max-width: 768px){
-                margin-right: 25px;
-              }
+              margin: 0;
             }
             @media screen and (max-width: 768px){
               margin: 0;
             }
             @media screen and (max-width: 576px){
-              margin: 0 27px;
+              width: 260px;
+              box-sizing: border-box;
             }
             img{
               width: 200px;
               border-radius: 50%;
               size: 100%;
               margin-bottom: 20px;
-              overflow: hidden;
+              // overflow: hidden;
             }
             .secret-kind{
+              height: 24px;
               font-size: 18px;
               margin-bottom: 11px;
             }
             p{
+              height: 105px;
               font-size: 16px;
             }
           }
