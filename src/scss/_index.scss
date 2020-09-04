@@ -192,7 +192,7 @@ body{
     }
     #secret{
 			display: flex;
-			// display: none;
+			display: none;
       width: 100vw;
       height: 576px;
       flex-flow: nowrap column;
@@ -302,79 +302,63 @@ body{
     }
     #chef{
       display: flex;
-      // display: none;
-      width: 100vw;
+      width: 100%;
       height: 460px;
-      max-height: 527px;
       flex-flow: nowrap row;
       justify-content: center;
+      align-items: center;
       background-color: #3D1101;
-      @media screen and (max-width: 576px){
-        height: 1527px;
+      box-sizing: border-box;
+      padding: {
+        left: 42px;
+        right: 52px;
       }
-      .chef-inside{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-flow: nowrap row;
-        justify-content: center;
-        box-sizing: border-box;
+      @media screen and (max-width: 768px){
         padding: {
-          left: 12px;
-          right: 12px;
+          left: 15px;
+          right: 15px;
         }
+      }
+      @media screen and (max-width: 576px){
+        height: auto;
+        flex-flow: nowrap column;
+        padding: 0;
+      }
+      img{
+        width: 50%;
+        max-width: 470px;
+        height: 460px;
+        object-fit: cover;
+        margin-right: 25px;
         @media screen and (max-width: 576px){
-          flex-flow: nowrap column;
-          justify-content: flex-start;
-          align-items: center;
-          padding: 0;
+          width: 100%;
+          margin: 0;
         }
-        img{
-          height: 460px;
-          object-fit: cover;
-          margin-right: 25px;
-          @media screen and (max-width: 768px){
-            max-width: 373px;
-            width: 50%;
-          }
-          @media screen and (max-width: 576px){
-            width: 100%;
-            max-width: 470px;
-            margin: 0;
-          }
-        }
-        .chef-content{
-          display: flex;
-          width: 50%;
-          max-width: 410px;
-          flex-flow: nowrap column;
-          justify-content: center;
+      }
+      .chef-content{
+        display: flex;
+        width: 50%;
+        max-width: 410px;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #EFE9E7;
+        @media screen and (max-width: 576px){
+          width: 100%;
+          padding: 30px;
           box-sizing: border-box;
-          color: #EFE9E7;
-          @media screen and (max-width: 576px){
-            width: 100%;
-            max-width: 460px;
-            min-height: 760px;
-            padding: {
-              top: 30px;
-              left: 30px;
-              right: 30px;
-              // bottom: 30px;
-            }
-          }
-          h1{
-            font-size: 20px;
-            line-height: 32px;
-          }
-          h2{
-            font-size: 16px;
-            margin: {
-              bottom: 16px;
-            }
-          }
-          p{
-            font-size: 16px;
-          }
+        }
+        h1{
+          font-size: 20px;
+          line-height: 32px;
+        }
+        h2{
+          font-size: 16px;
+          line-height: 21px;
+          margin-bottom: 16px;
+        }
+        p{
+          font-size: 16px;
         }
       }
     }

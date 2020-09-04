@@ -53,13 +53,11 @@
       </div>
     </div>
     <div id="chef">
-      <div class="chef-inside">
-        <img src="/img/main_chef_brown.png" alt="chef">
-        <div class="chef-content">
-          <h1>今日主廚：帕金森、梅在帕</h1>
-          <h2>Tody Chef: Plum in Shock</h2>
-          <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
-        </div>
+      <img src="/img/main_chef_brown.png" alt="chef">
+      <div class="chef-content">
+        <h1>今日主廚：帕金森、梅在帕</h1>
+        <h2>Tody Chef: Plum in Shock</h2>
+        <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
       </div>
     </div>
     <div id="feedback">
