@@ -12,15 +12,13 @@
       </ul>
     </div>
     <div id="banner">
-      <div class="banner-inside">
-        <div class="banner-content">
-          <div class="banner-title1">
-            <h1>咬一口<br class="linebreak">就無法忘懷的漢堡</h1>
-          </div>
-          <div class="banner-title2">
-            <p>七夕絕對無法錯過的好滋味</p>
-            <p>六角大漢堡</p>
-          </div>
+      <div class="banner-content">
+        <div class="banner-title1">
+          <h1>咬一口<br class="linebreak">就無法忘懷的漢堡</h1>
+        </div>
+        <div class="banner-title2">
+          <p>七夕絕對無法錯過的好滋味</p>
+          <p>六角大漢堡</p>
         </div>
       </div>
     </div>
