@@ -23,28 +23,26 @@
       </div>
     </div>
     <div id="secret">
-      <div class="secret-inside">
-        <div class="secret-title">
-          <div class="line"></div>
-          <h1>客人總是在詢問<br>這麼好吃的秘訣是什麼</h1>
-          <div class="line"></div>
+      <div class="secret-title">
+        <div class="line"></div>
+        <h1>客人總是在詢問<br>這麼好吃的秘訣是什麼</h1>
+        <div class="line"></div>
+      </div>
+      <div class="secret-content">
+        <div class="secret-items secret-1">
+          <img id="img1" src="/img/feature_1.png">
+          <h1 class="secret-kind">台灣本土蔬菜</h1>
+          <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
         </div>
-        <div class="secret-content">
-          <div class="secret-items secret-1">
-            <img id="img1" src="/img/feature_1.png">
-            <h1 class="secret-kind">台灣本土蔬菜</h1>
-            <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
-          </div>
-          <div class="secret-items secret-2">
-            <img id="img2" src="/img/feature_2.png">
-            <h1 class="secret-kind">專業米其林廚師</h1>
-            <p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
-          </div>
-          <div class="secret-items secret-3">
-            <img id="img3" src="/img/feature_3.png">
-            <h1 class="secret-kind">對於專業不能退讓</h1>
-            <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
-          </div>
+        <div class="secret-items secret-2">
+          <img id="img2" src="/img/feature_2.png">
+          <h1 class="secret-kind">專業米其林廚師</h1>
+          <p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+        </div>
+        <div class="secret-items secret-3">
+          <img id="img3" src="/img/feature_3.png">
+          <h1 class="secret-kind">對於專業不能退讓</h1>
+          <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
         </div>
       </div>
     </div>
