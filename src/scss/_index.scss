@@ -11,9 +11,12 @@
   margin-bottom: 12px;
 }
 @mixin booking-label {
+  display: flex;
+  height: 20px;
+  align-items: center;
   margin-bottom: 6px;
-  padding: 3px 0;
   font-size: 14px;
+  color: #3D1101;
 }
 @mixin booking-input {
   width: 100%;
@@ -21,14 +24,18 @@
   height: 32px;
   background: #FFFFFF;
   box-sizing: border-box;
+  box-shadow: inset 0px 1px 0px 0px #ECECEC;
+  font-size: 16px;
+  color: #4A4A4A;
   border: {
     width: 1px;
     style: solid;
     color: #CCCCCC;
     radius: 3px;
   }
-  box-shadow: inset 0px 1px 0px 0px #ECECEC;
-  font-size: 16px;
+  @media screen and (max-width: 576px){
+    max-width: none;
+  }
 }
 body{
   background-color: #EFE9E7;
@@ -64,7 +71,7 @@ body{
         h1{
           font-size: 24px;
           color: #FFFFFF;
-          opacity: none;
+          opacity: 1;
         }
       }
       .nav-list{
@@ -75,11 +82,11 @@ body{
         font-size: 16px;
         li{
           a{
-            color: #FFFFFF;
             margin-left: 30px;
             text-align: center;
             text-decoration: none;
             border-bottom: #3d1101;
+            color: #FFFFFF;
             @media screen and (max-width: 576px){
               display: none;
             }
@@ -181,7 +188,8 @@ body{
       }
     }
     #secret{
-			display: flex;
+      display: flex;
+      display: none;
       width: 100%;
       height: 576px;
       flex-flow: nowrap column;
@@ -242,6 +250,7 @@ body{
           flex-flow: nowrap column;
           justify-content: flex-start;
           align-items: center;
+          box-sizing: border-box;
           margin-right: 60px;
           &:first-child{
             @media screen and (max-width: 576px){
@@ -261,7 +270,6 @@ body{
           }
           @media screen and (max-width: 576px){
             width: 260px;
-            box-sizing: border-box;
           }
           img{
             width: 200px;
@@ -284,6 +292,7 @@ body{
     }
     #chef{
       display: flex;
+      display: none;
       width: 100%;
       height: 460px;
       flex-flow: nowrap row;
@@ -346,7 +355,7 @@ body{
     }
     #feedback{
       display: flex;
-      // display: none;
+      display: none;
       width: 100%;
       min-height: 365px;
       flex-flow: nowrap column;
@@ -356,6 +365,9 @@ body{
       padding: {
         top: 50px;
         bottom: 50px;
+      }
+      @media screen and (max-width: 576px){
+        padding-bottom: 57px;
       }
       .feedback-title{
         height: 32px;
@@ -385,13 +397,26 @@ body{
             right: 10px;
           }
         }
+        @media screen and (max-width: 576px){
+          flex-flow: nowrap column;
+          align-items: center;
+        }
         .feedback-items{
+          // 不能設置height，高度才能被拉大
           display: flex;
           width: 33%;
           max-width: 300px;
           flex-flow: nowrap row;
           align-items: flex-start;
+          box-sizing: border-box;
           margin-right: 20px;
+          @media screen and (max-width: 576px){
+            width: 100%;
+            margin: {
+              right: 0;
+              bottom: 30px;
+            }
+          }
           &:nth-child(3){
             margin: 0;
           }
@@ -433,6 +458,7 @@ body{
               opacity: 75%;
               line-height: 24px;
               font-size: 16px;
+              opacity: 75%;
             }
           }
         }
@@ -441,160 +467,197 @@ body{
     #booking{
       display: flex;
       // display: none;
-      width: 100vw;
+      width: 100%;
       height: 588px;
+      flex-flow: nowrap column;
+      justify-content: flex-start;
+      box-sizing: border-box;
       background-color: #FAFAFA;
-      justify-content: center;
-      .booking-inside{
+      padding: {
+        top: 50px;
+        bottom: 50px;
+      }
+      @media screen and (max-width: 576px){
+        padding-top: 43px;
+        height: auto;
+      }
+      .booking-title{
+        display: flex;
+        min-height: 64px;
+        justify-content: center;
+        align-items: center;
+        margin: {
+          bottom: 38px;
+        }
+        @media screen and (max-width: 576px){
+          margin: {
+            bottom: 30px;
+          }
+        }
+        h1{
+          color: #3D1101;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+      .booking-content{
         display: flex;
         width: 100%;
-        height: 100%;
-        flex-flow: nowrap column;
+        flex-flow: nowrap row;
         justify-content: center;
-        .booking-title{
-          h1{
-            color: #3D1101;
-            font-size: 24px;
-            text-align: center;
+        box-sizing: border-box;
+        padding: {
+          left: 42px;
+          right: 42px;
+        }
+        @media screen and (max-width: 768px){
+          padding: {
+            left: 10px;
+            right: 10px;
+          }
+        }
+        @media screen and (max-width: 576px){
+          flex-flow: nowrap column;
+          align-items: center;
+        }
+        img{
+          width: 50%;
+          max-width: 460px;
+          height: 386px;
+          object-fit: cover;
+          margin: {
+            right: 20px;
+          }
+          @media screen and (max-width: 768px){
+            max-width: 363px;
+          }
+          @media screen and (max-width: 576px){
+            width: 100%;
+            max-width: none;
             margin: {
-              bottom: 38px;
+              right: 0;
+              bottom: 30px;
             }
           }
         }
-        .booking-content{
+        .booking-info{
           display: flex;
           width: 100%;
-          flex-flow: nowrap row;
-          justify-content: center;
-          img{
-            width: 50%;
-            max-width: 460px;
-            height: 386px;
-            object-fit: cover;
-            margin: {
-              right: 10px;
-              left: 10px;
-            }
-            @media screen and (max-width: 768px){
-              max-width: 363px;
-            }
+          max-width: 460px;
+          flex-flow: nowrap column;
+          justify-content: space-between;
+          @media screen and (max-width: 576px){
+            max-width: none;
           }
-          .booking-info{
-            display: flex;
-            width: 50%;
-            max-width: 460px;
-            flex-flow: nowrap column;
-            justify-content: space-between;
-            margin: {
-              right: 10px;
-              left: 10px;
+          .booking-list{
+            .item-1{
+              @include booking-item();
+              label{
+                @include booking-label();
+              }
+              input{
+                @include booking-input();
+                padding: 5px 14px;
+              }
             }
-            .booking-list{
-              .item-1{
-                @include booking-item();
-                label{
-                  @include booking-label();
-                }
-                input{
-                  @include booking-input();
-                  padding: 5px 14px;
-                }
+            .item-2{
+              @include booking-item();
+              label{
+                @include booking-label();
               }
-              .item-2{
-                @include booking-item();
-                label{
-                  @include booking-label();
-                }
-                input{
-                  @include booking-input();
-                  padding: 5px 12px;
-                }
+              input{
+                @include booking-input();
+                padding: 5px 12px;
               }
-              .item-3{
-                @include booking-item();
-                label{
-                  @include booking-label();
-                }
-                input{
-                  @include booking-input();
-                  padding: 3px 12px 7px 12px;
-                }
+            }
+            .item-3{
+              @include booking-item();
+              label{
+                @include booking-label();
               }
-              .item-4{
-                @include booking-item();
-                label{
-                  @include booking-label();
-                }
-                input{
-                  @include booking-input();
-                  padding: 5px 12px;
-                }
+              input{
+                @include booking-input();
+                padding: 3px 12px 7px 12px;
               }
-              .item-5{
-                @include booking-item();
-                label{
-                  @include booking-label();
-                }
-                .vegetarian{
+            }
+            .item-4{
+              @include booking-item();
+              label{
+                @include booking-label();
+              }
+              input{
+                @include booking-input();
+                padding: 5px 12px;
+              }
+            }
+            .item-5{
+              @include booking-item();
+              label{
+                @include booking-label();
+              }
+              .yesorno{
+                display: flex;
+                height: 20px;
+                flex-flow: nowrap row;
+                justify-content: flex-start;
+                div{
                   display: flex;
                   flex-flow: nowrap row;
                   justify-content: flex-start;
-                  div{
-                    display: flex;
-                    flex-flow: nowrap row;
-                    justify-content: flex-start;
-                    margin-right: 36px;
-                    input{
-                      @include booking-input();
-                      width: auto;
-                      height: 16px;
-                      margin-right: 6px;
-                      box-shadow: none;
-                      border: {
-                        width: 1px;
-                        style: solid;
-                        color: #4A90E2;
-                      }
+                  align-items: center;
+                  box-sizing: border-box;
+                  margin-right: 36px;
+                  input{
+                    @include booking-input();
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 6px;
+                    box-shadow: none;
+                    border: {
+                      width: 1px;
+                      style: solid;
+                      color: #9B9B9B;
                     }
-                    p{
-                      font-size: 14px;
-                      height: 20px;
+                    &:focus{
+                      border-color: #4A90E2;
                     }
+                  }
+                  p{
+                    font-size: 14px;
+                    color: #3D1101;
                   }
                 }
               }
             }
-            .buttons{
-              display: flex;
-              flex-flow: nowrap row;
-              width: 100%;
-              justify-content: flex-end;
-              align-self: end;
-              font-size: 14px;
-              #cancel{
-                width: 70px;
-                height: 32px;
-                background: rgba(0,0,0,0.35);
-                opacity: 100%;
-                color: white;
-                border: {
-                  style: none;
-                  radius: 3px;
-                }
+          }
+          .buttons{
+            display: flex;
+            flex-flow: nowrap row;
+            width: 100%;
+            justify-content: flex-end;
+            align-self: end;
+            font-size: 14px;
+            #cancel{
+              width: 70px;
+              height: 32px;
+              background: rgba(0,0,0,0.35);
+              opacity: 100%;
+              color: white;
+              margin-right: 11px;
+              border: {
+                style: none;
+                radius: 3px;
               }
-              #send{
-                width: 70px;
-                height: 32px;
-                background: #F56C23;
-                opacity: 100%;
-                color: white;
-                border: {
-                  style: none;
-                  radius: 3px;
-                }
-                margin: {
-                  left: 11px;
-                }
+            }
+            #send{
+              width: 70px;
+              height: 32px;
+              background: #F56C23;
+              opacity: 100%;
+              color: white;
+              border: {
+                style: none;
+                radius: 3px;
               }
             }
           }
