@@ -129,29 +129,27 @@
       </div>
     </div>
     <div id="footer">
-      <div class="footer-inside">
-        <div class="footer-left">
-          <div class="footer-about">
-            <h1>關於 六角西餐廳</h1>
-            <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
-          </div>
-          <div class="footer-contact">
-            <h1>聯絡方式</h1>
-            <ul>
-              <li>高雄市中正五路到底</li>
-              <li>+886 886 886</li>
-              <li>service@hexschool.com</li>
-            </ul>
-          </div>
+      <div class="footer-left">
+        <div class="footer-about">
+          <h1>關於 六角西餐廳</h1>
+          <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
         </div>
-        <div class="footer-right">
-          <h1>六角西餐廳</h1>
-          <div class="social">
-            <i class="fab fa-google-plus-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-facebook-square"></i>
-            <div class="aaa"></div>
-          </div>
+        <div class="footer-contact">
+          <h1>聯絡方式</h1>
+          <ul>
+            <li>高雄市中正五路到底</li>
+            <li>+886 886 886</li>
+            <li>service@hexschool.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h1>六角西餐廳</h1>
+        <div class="social">
+          <i class="fab fa-google-plus-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <div class="aaa"></div>
         </div>
       </div>
     </div>
