@@ -68,10 +68,18 @@ body{
         padding-right: 22px;
       }
       .nav-title{
-        h1{
-          font-size: 24px;
-          color: #FFFFFF;
-          opacity: 1;
+        a{
+          &:hover{
+            border: 0;
+          }
+          &:active{
+            border: none;
+          }
+          h1{
+            font-size: 24px;
+            color: #FFFFFF;
+            opacity: 1;
+          }
         }
       }
       .nav-list{

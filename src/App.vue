@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <div class="nav-title">
-        <h1>六角西餐廳</h1>
+        <a href=""><h1>六角西餐廳</h1></a>
       </div>
       <ul class="nav-list">
         <li class="a"><a href="#secret">特色</a></li>
