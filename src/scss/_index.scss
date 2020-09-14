@@ -52,8 +52,7 @@ body{
       justify-content: space-between;
       align-items: center;
       box-sizing: border-box;
-      background-color: rgb(0, 0, 0);
-      opacity: 75%;
+      background-color: rgba(0, 0, 0, 0.75);
       padding: {
         left: 42px;
         right: 48px;
@@ -68,17 +67,26 @@ body{
         padding-right: 22px;
       }
       .nav-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a{
-          &:hover{
-            border: 0;
-          }
-          &:active{
-            border: none;
-          }
           h1{
             font-size: 24px;
             color: #FFFFFF;
             opacity: 1;
+            box-sizing: border-box;
+            &:link{
+              border: none;
+            }
+            &:visited{
+              border: none;
+            }
+            &:hover{
+              transition: 0.3s;
+              padding-bottom: 8px;
+              border-bottom: 3px solid #3d1101;
+            }
           }
         }
       }
@@ -90,18 +98,20 @@ body{
         font-size: 16px;
         li{
           a{
-            margin-left: 30px;
             text-align: center;
             text-decoration: none;
-            border-bottom: #3d1101;
+            box-sizing: border-box;
             color: #FFFFFF;
-            @media screen and (max-width: 576px){
-              display: none;
-            }
+            border-bottom: #3d1101;
+            margin-left: 30px;
+            padding-bottom: 14px;
             &:hover{
               transition: 0.3s;
+              padding-bottom: 8px;
               border-bottom: 3px solid #3d1101;
-              box-sizing: border-box;
+            }
+            @media screen and (max-width: 576px){
+              display: none;
             }
           }
           i{
