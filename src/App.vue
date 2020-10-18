@@ -106,8 +106,8 @@
               <input type="email" name="email" placeholder="test@gmail.com">
             </div>
             <div class="items item-4">
-              <label for="email">人數</label>
-              <input type="number" name="people" placeholder="">
+              <label for="people">人數</label>
+              <input type="number"  name="people" placeholder="">
             </div>
             <div class="items item-5">
               <label for="vegetarian">是否需要素食</label>
@@ -122,7 +122,7 @@
             </div>
           </div>
           <div class="buttons">
-            <button id="cancel">取消</button>
+            <button id="cancel" @click="cancel">取消</button>
             <input id="send" type="submit" value="送出">
           </div>
         </form>
@@ -155,6 +155,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+    }
+  },
+  methods: {
+    cancel () {
+      this.name = ''
+      this.tele = ''
+      this.email = ''
+      this.people = ''
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 @import 'scss/all.scss';
