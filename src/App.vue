@@ -175,6 +175,7 @@ export default {
 
 <style lang="scss">
 @import 'scss/all.scss';
+
 .nav {
   a {
     &.router-link-exact-active {
