@@ -83,9 +83,6 @@ body{
               border: none;
             }
             &:hover{
-              transition: 0.3s;
-              padding-bottom: 8px;
-              border-bottom: 3px solid #3d1101;
             }
           }
         }
@@ -292,7 +289,6 @@ body{
             border-radius: 50%;
             size: 100%;
             margin-bottom: 20px;
-            // overflow: hidden;
           }
           .secret-kind{
             height: 24px;
