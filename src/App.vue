@@ -103,7 +103,7 @@
             </div>
             <div class="items item-3">
               <label for="email">信箱</label>
-              <input type="email" name="email" placeholder="test@gmail.com">
+              <input type="email" name="email" placeholder="test@testing.com">
             </div>
             <div class="items item-4">
               <label for="people">人數</label>

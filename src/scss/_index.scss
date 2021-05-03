@@ -45,7 +45,7 @@ body{
     font-family: MicrosoftJhengHeiRegular;
     #nav{
       display: flex;
-      position: fixed;
+      position: absolute;
       width: 100%;
       height: 56px;
       flex-flow: nowrap row;
